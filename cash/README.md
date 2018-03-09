@@ -1,6 +1,6 @@
 # The programm cash converts currencies.
 
-##installation
+## Installation
 
 First, you need to install node.js and npm.
 Then you will need some dependencies to use the programm.
@@ -19,12 +19,12 @@ use this command:
 npm install dependency
 ```
 
-##utilisation
+## Utilisation
 
 Here are the usage of the programm
 
 ```
-$node bin/index.js 
+$node bin/index.js <amount> <currencyFrom> <currencyTo> 
 ```
 
 
