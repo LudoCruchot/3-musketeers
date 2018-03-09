@@ -8,6 +8,7 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
+/** function */
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -20,12 +21,13 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
+/** function */
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
 
-// ca print le use
+/** function */
 const help = () => {
   console.log(`
 Usage:
@@ -58,13 +60,14 @@ Examples:
   process.exit(1);
 };
 
+/** function vérifie si c'est une des commandes et la traite */
 const helpers = argv => {
-  // Version
+  // Version  -> si il y a la commande version dans la command line on appelle la fonction version
   if (argv.indexOf('--version') !== - 1 || argv.indexOf('-v') !== - 1) {
     version();
   }
 
-  // Help
+  // Help -> si il y a la commande help dans la command line on appelle la fonction help
   if (
     argv.indexOf('--help') !== - 1
     || argv.indexOf('-h') !== - 1
@@ -73,6 +76,7 @@ const helpers = argv => {
     help();
   }
 
+  // Save -> si il y a la commande save dans la command line on appelle la fonction saveCurrencies
   if (
     argv.indexOf('--save') !== - 1
     || argv.indexOf('-s') !== - 1

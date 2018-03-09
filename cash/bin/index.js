@@ -6,9 +6,12 @@ const cash = require('./cash.js');
 
 const config = new Conf();
 
+/** argv contains the command line arguments (first: node, second: index.js, third:amount, etc..) */
 const argv = process.argv.slice(2);
 
-
+/**
+ * @param {string} argv - All the command line arguments after the second argument
+ */
 helpers(argv);
 
 const command = {
