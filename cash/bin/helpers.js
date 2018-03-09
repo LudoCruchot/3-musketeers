@@ -25,6 +25,7 @@ const version = () => {
   process.exit(1);
 };
 
+// ca print le use
 const help = () => {
   console.log(`
 Usage:

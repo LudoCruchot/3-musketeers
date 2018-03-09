@@ -36,8 +36,23 @@ Here are the commands
 
 ```
 $ node bin/index.js 1 usd eur
-$ node bin/index.js --save usd eur pln
+
+> √ 0.81 (EUR) Euro
+
+$ node bin/index.js --save aud eur
+
+> Saved default currencies to C:\Users\Antoine\AppData\Local\cash-nodejs\Config\config.json
 ```
+Once default currencies are saved, you just have to specify the amount
+
+```
+$ node bin/index.js 200
+
+> √ 125.69 (EUR) Euro
+> √ 156.12 (USD) US Dollar
+>  Conversion of AUD 200
+```
+
 ## Information
 
 Here are all the currencies you can use
