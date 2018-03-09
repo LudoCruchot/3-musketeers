@@ -19,14 +19,22 @@ use this command:
 npm install dependency
 ```
 
-## Utilisation
+## Usage
 
 Here are the usage of the programm
 
 ```
-$node bin/index.js <amount> <currencyFrom> <currencyTo> 
+$node bin/index.js <amount> <currencyFrom> <currencyTo>
+$node bin/index.js <command> 
 ```
 
+Here are the commands
+
+```
+--save, -s Save currencies as default currencies
+--help, -h Display help message
+--version, -v Display version number
+```
 
 
 
