@@ -1,6 +1,6 @@
 # The programm cash converts currencies.
 
-#installation
+##installation
 
 First, you need to install node.js and npm.
 Then you will need some dependencies to use the programm.
@@ -15,14 +15,18 @@ ora
 
 use this command: 
 
-...
+```
 npm install dependency
-...
+```
 
-#utilisation
+##utilisation
 
 Here are the usage of the programm
 
+```
 $node bin/index.js 
+```
+
+
 
 
