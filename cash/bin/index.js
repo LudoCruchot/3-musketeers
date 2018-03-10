@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const Conf = require('conf');
+// conf -> simple config handling for module
 const helpers = require('./helpers.js');
 const cash = require('./cash.js');
 
@@ -9,9 +10,6 @@ const config = new Conf();
 /** argv contains the command line arguments (first: node, second: index.js, third:amount, etc..) */
 const argv = process.argv.slice(2);
 
-/**
- * @param {string} argv - All the command line arguments after the second argument
- */
 helpers(argv);
 
 const command = {
@@ -22,5 +20,7 @@ const command = {
       ? process.argv.slice(4)
       : config.get('defaultTo', ['USD', 'EUR', 'GBP'])
 };
+
+console.log(command);
 
 cash(command);
